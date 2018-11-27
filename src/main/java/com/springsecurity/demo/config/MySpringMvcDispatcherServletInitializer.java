@@ -1,9 +1,8 @@
 package com.springsecurity.demo.config;
 
 import org.springframework.lang.Nullable;
-import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-import org.springframework.web.servlet.support.AbstractDispatcherServletInitializer;
+
 
 public class MySpringMvcDispatcherServletInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
