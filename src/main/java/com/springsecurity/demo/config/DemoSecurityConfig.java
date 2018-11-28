@@ -31,8 +31,8 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
-                .loginPage("/showMyLoginPage")
-                .loginProcessingUrl("/authenticateTheUser")
-                .permitAll();
+                .loginPage("/showMyLoginPage") // need a controller for this route
+                .loginProcessingUrl("/authenticateTheUser") // no need for a controller for this
+                .permitAll(); // allows all users to see the login page.
     }
 }
