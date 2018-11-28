@@ -10,8 +10,8 @@
 	<name>spring-security-demo</name>
 
 	<properties>
-		<springframework.version>5.1.1.RELEASE</springframework.version>
-		<springsecurity.version>5.1.1.RELEASE</springsecurity.version>
+		<springframework.version>5.0.2.RELEASE</springframework.version>
+		<springsecurity.version>5.0.0.RELEASE</springsecurity.version>
 
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -29,9 +29,15 @@
 		<!-- Spring Security -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-core</artifactId>
-			<version>5.0.2.RELEASE</version>
+			<artifactId>spring-security-web</artifactId>
+			<version>${springsecurity.version}</version>
 		</dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${springsecurity.version}</version>
+        </dependency>
 
 
 		<!-- Servlet, JSP and JSTL support -->
