@@ -12,5 +12,24 @@
 </head>
 <body>
 
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+
+<form:form action="${pageContext.request.contextPath}/authenticateTheUser" method="post">
+
+
+    <p>
+        <label for="username">User name:</label>
+        <input type="text" name="username" id="username">
+    </p>
+    <p>
+        <label for="password">Password:</label>
+        <<input type="password" name="password" id="password">
+    </p>
+
+    <input type="submit" value="Login">
+
+
+</form:form>
+
 </body>
 </html>
