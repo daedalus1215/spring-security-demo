@@ -7,7 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eea4a643-48a1-42fe-90ed-e50b60b6be55" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/fancy-login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/springsecurity/demo/Controller/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/com/springsecurity/demo/Controller/LoginController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/plain-login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/plain-login.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/springsecurity/demo/Controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state relative-caret-position="153">
+              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#270#271#0" expanded="true" />
@@ -66,12 +68,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plain-login.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="plain-login.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/plain-login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="56" lean-forward="false" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+            <state relative-caret-position="540">
+              <caret line="41" column="7" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="41" selection-end-column="7" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fancy-login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/fancy-login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="43" column="91" lean-forward="true" selection-start-line="43" selection-start-column="91" selection-end-line="43" selection-end-column="91" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,9 +141,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/springsecurity/demo/config/SecurityWebApplicationInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springsecurity/demo/config/DemoSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springsecurity/demo/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springsecurity/demo/Controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springsecurity/demo/Controller/DemoController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/plain-login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/fancy-login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springsecurity/demo/Controller/LoginController.java" />
       </list>
     </option>
   </component>
@@ -270,6 +285,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.springsecurity.demo.Controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Java\IntelliJ\spring-security-demo\src\main\webapp\WEB-INF\view" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -572,7 +590,7 @@
       <workItem from="1543318640188" duration="738000" />
       <workItem from="1543403317037" duration="690000" />
       <workItem from="1543404052863" duration="1128000" />
-      <workItem from="1543489595426" duration="1479000" />
+      <workItem from="1543489595426" duration="2228000" />
     </task>
     <servers />
   </component>
@@ -582,7 +600,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4035000" />
+    <option name="totallyTimeSpent" value="4784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1579" height="1047" extended-state="0" />
@@ -777,18 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springsecurity/demo/Controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springsecurity/demo/config/DemoSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
@@ -801,9 +807,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/plain-login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="56" lean-forward="false" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+        <state relative-caret-position="540">
+          <caret line="41" column="7" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="41" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/fancy-login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="43" column="91" lean-forward="true" selection-start-line="43" selection-start-column="91" selection-end-line="43" selection-end-column="91" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springsecurity/demo/Controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -11,13 +11,20 @@
 <html>
 <head>
     <title>Custom LoginPage</title>
+
+
+    <style>
+        .failed {
+            color: red;
+        }
+    </style>
 </head>
 <body>
 
 <h3>My Custom Login Page</h3>
 <form:form action="${pageContext.request.contextPath}/authenticateTheUser" method="post">
     <c:if test="${param.error != null}">
-        <i>Sorry! You entered invalid username/password.</i>
+        <i class="failed">Sorry! You entered invalid username/password.</i>
     </c:if>
     <p>
         <label for="username">User name:</label>
