@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%--
   Created by IntelliJ IDEA.
   User: ladam
@@ -12,10 +13,8 @@
 </head>
 <body>
 
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-
+<h3>My Custom Login Page</h3>
 <form:form action="${pageContext.request.contextPath}/authenticateTheUser" method="post">
-
 
     <p>
         <label for="username">User name:</label>
@@ -27,7 +26,6 @@
     </p>
 
     <input type="submit" value="Login">
-
 
 </form:form>
 
