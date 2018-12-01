@@ -19,16 +19,19 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
                 .withUser(users.username("john").password("test1").roles("EMPLOYEE"));
 
         auth.inMemoryAuthentication()
-                .withUser(users.username("mary").password("test12").roles("MANAGER"));
+                .withUser(users.username("mary").password("test12").roles("MANAGER", "EMPLOYEE"));
 
         auth.inMemoryAuthentication()
-                .withUser(users.username("suzanne").password("test123").roles("ADMIN"));
+                .withUser(users.username("suzanne").password("test123").roles("ADMIN", "EMPLOYEE", "MANAGER"));
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .anyRequest().authenticated()
+//                .antMatchers("/").hasRole("EMPLOYEE") // restricting path based on user role
+//                .antMatchers("/leaders/**").hasRole("MANAGER") // restricting path based on user role
+//                .antMatchers("/systems/**").hasRole("ADMIN") // restricting path based on user role
                 .and()
                 .formLogin()
                 .loginPage("/showMyLoginPage") // need a controller for this route

@@ -1,5 +1,6 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> <%-- for conditionals --%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %> <%-- for <form:form> usage --%>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 
 
 <%--
@@ -25,12 +26,26 @@
 </form:form>
 
 
+<h2>Home Page</h2>
+<hr>
+<p>Welcome to the home page!</p>
 
 
+<%-- display user name and role --%>
+<p>
+    User: <security:authentication property="principal.username"/>
+    <br><br>
+    Role(s): <security:authentication property="principal.authorities"/>
+</p>
 
 
-    <h2>Home Page</h2>
-    <hr>
-    <p>Welcome to the home page!</p>
+<%-- Add a link to point to /leaders .. this is for the managers --%>
+<hr>
+
+<p>
+    <a href="${pageContext.request.contextPath}/leaders">Leadership Meeting</a> (Only for Managers)
+</p>
+<hr>
+
 </body>
 </html>
