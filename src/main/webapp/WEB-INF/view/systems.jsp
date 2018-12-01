@@ -8,15 +8,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Leaders</title>
+    <title>Systems - Admin Page</title>
 </head>
 <body>
 
-<h2>Leaders - Manager Page</h2>
+<h2>Systems - Admin Page</h2>
 <hr>
 
 <p>
-    Testing to make sure only leaders can access this page.
+    Testing to make sure only Admins can access this page.
 </p>
 
 <hr>

@@ -31,7 +31,7 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 //                .anyRequest().authenticated() // need to comment this out because we do not want all roles access to every route
                 .antMatchers("/").hasRole("EMPLOYEE") // need this if we comment out above, because there would be no authorization associated with the route, so it would be inaccessible.
                 .antMatchers("/leaders/**").hasRole("MANAGER") // restricting path based on user role
-//                .antMatchers("/systems/**").hasRole("ADMIN") // restricting path based on user role
+                .antMatchers("/systems/**").hasRole("ADMIN") // restricting path based on user role
                 .and()
                 .formLogin()
                 .loginPage("/showMyLoginPage") // need a controller for this route
