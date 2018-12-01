@@ -27,6 +27,7 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+
         http.authorizeRequests()
 //                .anyRequest().authenticated() // need to comment this out because we do not want all roles access to every route
                 .antMatchers("/").hasRole("EMPLOYEE") // need this if we comment out above, because there would be no authorization associated with the route, so it would be inaccessible.
@@ -38,6 +39,9 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
                 .loginProcessingUrl("/authenticateTheUser") // no need for a controller for this
                 .permitAll() // allows all users to see the login page.
                 .and()
-                .logout().permitAll(); // allow everyone to log out if they desire to do so.
+                .logout().permitAll() // allow everyone to log out if they desire to do so.
+                .and()
+                .exceptionHandling().accessDeniedPage("/access-denied"); // we will setup our access denied page mapping.
     }
+
 }
