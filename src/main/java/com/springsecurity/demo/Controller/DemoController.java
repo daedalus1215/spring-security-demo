@@ -24,4 +24,9 @@ public class DemoController {
     public String showManagers() {
         return "systems";
     }
+
+    @RequestMapping("/access-denied")
+    public String showAccessDenied() {
+        return "access-denied";
+    }
 }
