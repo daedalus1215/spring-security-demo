@@ -11,4 +11,11 @@ public class DemoController {
     public String showHome() {
         return "home";
     }
+
+
+    // Probably would put this in its own Controller or 'RequestHandler'.
+    @GetMapping("/leaders")
+    public String showLeaders() {
+        return "leaders";
+    }
 }
