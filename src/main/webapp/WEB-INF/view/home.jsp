@@ -38,18 +38,22 @@
     Role(s): <security:authentication property="principal.authorities"/>
 </p>
 
+<security:authorize access="hasRole('MANAGER')">
+    <%-- Add a link to point to /leaders .. this is for the managers --%>
+    <hr>
+    <p>
+        <a href="${pageContext.request.contextPath}/leaders">Leadership Meeting</a> (Only for Managers)
+    </p>
+    <hr>
+</security:authorize>
 
-<%-- Add a link to point to /leaders .. this is for the managers --%>
-<hr>
-<p>
-    <a href="${pageContext.request.contextPath}/leaders">Leadership Meeting</a> (Only for Managers)
-</p>
-<hr>
-<%-- Add a link to point to /leaders .. this is for the managers --%>
-<hr>
-<p>
-    <a href="${pageContext.request.contextPath}/systems">Systems</a> (Only for Admins)
-</p>
-<hr>
+<security:authorize access="hasRole('ADMIN')">
+    <%-- Add a link to point to /leaders .. this is for the managers --%>
+    <hr>
+    <p>
+        <a href="${pageContext.request.contextPath}/systems">Systems</a> (Only for Admins)
+    </p>
+    <hr>
+</security:authorize>
 </body>
 </html>
