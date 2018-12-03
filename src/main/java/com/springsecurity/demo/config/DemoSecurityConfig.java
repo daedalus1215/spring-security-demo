@@ -10,6 +10,11 @@ import org.springframework.security.core.userdetails.User;
 @Configuration
 @EnableWebSecurity
 public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
+
+    // adda  reference to our security data source
+
+
+
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         // add our users for in memory authentication
